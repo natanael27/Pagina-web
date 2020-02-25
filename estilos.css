@@ -1,0 +1,162 @@
+body{
+  margin:0;
+}
+header{
+  width: 100%;
+  background-color:/*rgba(100, 180, 250, 0.7)*/white;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------*/
+/*@import url('https://fonts.googleapis.com/css?family=Great+Vibes&display=swap');*/ /*-(Great Vibes)-*/
+/*---(kanit)---*/
+
+
+
+#menu-naranja{background-color: tomato;}
+#menu-verde{background-color: tomato;}
+#menu-rojo{background-color: tomato;}
+#menu-azul{background-color: tomato;}
+
+  .menu ul{
+    /*width: 500px;*/
+    margin: 0;
+    list-style: none;       /*Le quita los puntos de estilo viñeta que aparecen al lado de cada elemento*/
+    padding: 0;       /*ajusta la lista contra el margen izquierdo*/
+    display: flex;        /*hace que los elementos de la fila sean cajas flexibles y por defecto se coloquen en una fila*/
+  }
+  .menu li{
+    font-family: 'Kanit', sans-serif;
+    border-right:1px solid lightgrey;   /*le doy un borde al elemnto de lista con el tmaaño y tambien el color */
+  }
+
+  .menu ul li a:hover{
+      background: rgba(50, 100,150, 0.3);
+      box-shadow: 0px 5px 0px 0px black;
+
+  }
+   .menu li a{
+      display:block;      /*separa cada elemento de la lista para poder para luego darle un padding mayor*/
+      padding:10px 7px;       /*le da un ancho al espacio que hay entre cada elemento de la fila*/
+      color:white;       /*color del texto del menu*/
+      text-decoration: none;   /*le quito el subrayado*/
+  }
+
+  /*-------------------------------------------------------------------------------------------------------------*/
+
+
+.titulo{
+  display: flex;
+/*  margin-top: 0;*/
+  text-align:center;
+  font-family: 'Dancing Script',sans-serif;
+  font-size: 40px;
+  height: 20px;
+}
+.titulo h1{
+  margin-top: 0;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+  .redes-sociales{
+    font-size:35px;
+    height: 10px;
+  }
+  .redes-sociales ul{
+    /*margin-right: 70px;*/
+    display: flex;
+    margin-top:0;
+  }
+  .redes-sociales ul a{
+    border-right: 15px solid /*rgba(100, 180, 250, 0.7)*/white ;
+  }
+/*  .redes-sociales i{
+    color:tomato;
+  }*/
+
+  .fa-facebook-square{color:#25f;}
+  .fa-facebook-square:hover{color:#66CCFF}
+  .fa-whatsapp-square{color:green;}
+  .fa-whatsapp-square:hover{color:lightgreen;}
+  .fa-twitter-square{color:#08f}
+  .fa-twitter-square:hover{color:#00FFFF;}
+  .fa-instagram-square{color:red;}
+  .fa-instagram-square:hover{color:#FFCC00;}
+/*---------------------------------------------------------------------------------------*/
+
+
+.banner{
+
+  width: 800px ;
+  height: 300px;
+
+  margin: auto;
+  background-image:url(../img/fotobanner.jpg);
+  background-size: 100% 100%; /*para ajustar la imagen al bannner y se acomode */
+  animation: banner 10s infinite; /*----(nombre - tiempo - cantidad de veces)----*/
+}
+  @keyframes banner{
+    0%, 30%{
+      background-image:url(../img/fotobanner.jpg);
+    }
+    35%, 65%{
+      background-image: url(../img/fotobanner2.png);
+    }
+    70%, 100%{
+      background-image: url(../img/fotobanner3.jpg);
+    }
+  }
+
+
+
+  /*---------------------------------------------------------------------------------------------------------------*/
+
+  .texto-central{
+    /*display: flex;
+    margin-right: 50px;
+    margin-left: 50px;*/
+    font-family: 'Satisfy' ;
+    font-size: 20px;
+    min-height: 300px;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-self: center;
+    grid-column-gap:10px;
+
+    margin-top: 50px;
+    /*margin-bottom:20px;*/
+
+  }
+  .texto-central p{
+    background: #FFCCCC;
+  }
+  .texto-izq{
+    margin-left: 100px;
+  }
+  .texto-der{
+    margin-right: 100px;
+  }
+
+  /*--------------------------------------------------------------------------------------------*/
+.banner2{
+          background-image:url(../img/fotobanner.jpg);
+  }
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+    .flecha-final{
+      display:none;
+      padding: 20px;
+      background:rgba(220,10,30, 0.7);
+      font-size:20px;
+      cursor: pointer;
+      position: fixed;
+      bottom:20px;
+      right:20px;
+      border-radius: 50%;
+
+  }
